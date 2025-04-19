@@ -1,4 +1,4 @@
-# TajoType Backend
+# Driftype Backend
 
 Backend server for the Driftype typing game, handling user authentication, password management, and game statistics.
 
