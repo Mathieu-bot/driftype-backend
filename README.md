@@ -1,6 +1,6 @@
-# Driftype Backend
+# TajoType Backend
 
-Backend server for the Driftype typing game, handling user authentication, password management, and game statistics.
+Backend server for the TajoType typing game, handling user authentication, password management, and game statistics.
 
 ## Features
 
@@ -48,7 +48,6 @@ Backend server for the Driftype typing game, handling user authentication, passw
    PORT=3000
    NODE_ENV=development
    FRONTEND_URL=http://localhost:5500
-   USE_SSL=set-this-false-if-on-local-database-otherwise-true
 
    # Google OAuth Configuration
    GOOGLE_CLIENT_ID=your-google-client-id
@@ -110,8 +109,6 @@ Backend server for the Driftype typing game, handling user authentication, passw
   }
   ```
 
-  and stat endpoint , user bio modification
-
 ## Google Sign-In Setup
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
@@ -139,4 +136,25 @@ Backend server for the Driftype typing game, handling user authentication, passw
 - CORS enabled for frontend access
 - SSL/TLS encryption for database connection
 
+## Project Structure
 
+```
+backend/
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   └── authController.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── models/
+│   │   └── user.js
+│   ├── routes/
+│   │   └── authRoutes.js
+│   ├── utils/
+│   │   └── database.sql
+│   └── index.js
+├── .env.example
+├── package.json
+└── README.md
+```
